@@ -1,0 +1,149 @@
+<style>
+html,
+body {
+    /* give height 100% to all tags from html to .hero */
+    height: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    color: #fff;
+}
+
+.hero .alpha-bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("images/entrance_cover.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: .50;
+}
+
+.center {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: table;
+    opacity: 10;
+}
+
+.content-wrap {
+    display: table-cell;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,.30);
+    z-index: 999;
+    position: fixed;
+}
+
+.header .logo {
+    float: left;
+    height: 100%;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    color: #fff;
+}
+
+.header nav {
+    float: right;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header nav ul {
+    padding: 0 2rem 0 0;
+    margin: -.5rem 0 0 0;
+    position: relative;
+    top: 50%;
+    display: block;
+}
+
+.header nav ul li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.header nav ul li a {
+    color: #fff;
+    padding: 0 1em;
+    display: inline-block;
+    line-height: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover,
+.header nav ul li a:active {
+    color: #ff9800;
+}
+
+
+/* section */
+
+section {
+  text-align: center;
+  padding: 3rem;
+  line-height: 1.8em;
+}
+</style>
+<!-- Header -->
+<div class="header">
+    <div class="logo">
+        <h1>FLITZ</h1>
+    </div>
+    <!-- you can insert mobile menu here, to make it responsive -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="Services">Services</a></li>
+            <li><a href="Portfolio">Portfolio</a></li>
+            <li><a href="Contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+
+<!-- Hero starts here -->
+<div class="hero">
+    <div class="alpha-bg"></div>
+    <div class="center">
+        <div class="content-wrap">
+            <h2>Centered content</h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- random content -->
+<section>
+    <header>
+        <h2>Lorem Ipsum</h2>
+    </header>
+    <article>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br></p>
+    </article>
+</section>

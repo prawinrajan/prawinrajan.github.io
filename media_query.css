@@ -1,0 +1,86 @@
+/*------------------------------------------
+  Responsive Grid Media Queries - 1280, 1024, 768, 480
+   1280-1024   - desktop (default grid)
+   1024-768    - tablet landscape
+   768-480     - tablet 
+   480-less    - phone landscape & smaller
+--------------------------------------------*/
+/*@media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { } */
+
+/*For typical mobile devices*/
+
+#paragraph{
+    font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+#author {
+    font-family:medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+}
+#title,#subheading,#card-title{
+        font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif
+}
+
+ 
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .brand{
+        font-size: 20px;
+    }
+    .headCustom{
+	font-size:20px;
+	border-left: 2px solid #4285F4;
+}
+
+}
+
+/*For mobile (landscape)*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .brand{
+        font-size: 20px;
+    }
+    .headCustom{
+	font-size:25px;
+	border-left: 2px solid #4285F4;
+}
+
+}
+
+/*For tablet*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+   
+    .brand{
+        font-size: 23px;
+    }
+    .headCustom{
+	font-size:25px;
+	border-left: 2px solid #4285F4;
+}
+}
+
+/*For small desktop*/
+
+@media only screen and (min-width: 980px) and (max-width: 1023px) {
+    .brand{
+        font-size: 25px;
+    }
+    .headCustom{
+	font-size:30px;
+	border-left: 2px solid #4285F4;
+}
+}
+
+/*For large desktop*/
+@media only screen and (min-width: 1200px) {
+    .brand{
+        font-size: 25px;
+    }
+    .headCustom{
+	font-size:30px;
+	border-left: 2px solid #4285F4;
+}
+}

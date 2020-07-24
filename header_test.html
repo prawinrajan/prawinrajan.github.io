@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <title>Anna University BIT-Campus</title>
+	<link rel="shortcut icon" href="./Anna University BIT-Campus_files/logo.png">
+
+</head>
+<style>
+    html,
+    body,
+    header,
+    .jarallax {
+      height: 100%;
+    }
+
+    @media (min-width: 560px) and (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .jarallax {
+        height: 500px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+
+      html,
+      body,
+      header,
+      .jarallax {
+        height: 500px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2A48 !important;
+      }
+
+      .navbar {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12) !important;
+      }
+    }
+
+  </style>
+<body>
+<!--Navigation & Intro-->
+  <header>
+    <!-- Intro Section -->
+    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'
+      style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/67.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; " >
+      
+	  <div class="mask rgba-black-strong">
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+		
+          <div class="row smooth-scroll">
+            <div class="col-md-12 white-text text-center">
+			   <!--mega menu strat-->
+ <div class="container fixed-top  my-4 " id="navbarCustomdesign">    
+    <!-- Navbar 
+<nav class="navbar navbar-expand-lg  navbar-light white ">-->
+<mdb-navbar SideClass="navbar top-nav-collapse fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+    [containerInside]="false">
+
+  <!-- Navbar brand -->
+  
+  <mdb-navbar-brand class="navbar-brand " href="#"><img src="images/logo.png" width="40px;" height="40px;" alt="">
+   <b class="brand"> University College of Engineering,<br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Tiruchirappalli.</b>
+      
+</mdb-navbar-brand>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+    aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse " id="navbarSupportedContent2">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item text-uppercase active">
+        <a class="nav-link Trenderfont" href="#"> <i class="fas fa-home"></i> Home
+        </a>
+      </li>
+      <!-- Features -->
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase Trenderfont" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" onclick="funCalled()"> Administration</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 primary-color darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink2" >
+          <div class="row" >
+            <div class="col-md-6 col-xl-3 sub-menu mb-xl-0 mb-4">
+              <h6 class="sub-title  font-weight-bold white-text Trenderfont">Administration</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Vice chancellor
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Registrar
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Additional Registrar
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Board of Governors
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Dean
+                  </a>
+                </li>
+              </ul>
+            </div>
+			<div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+             <!-- <h6 class="sub-title text-uppercase font-weight-bold white-text">Administration</h6>
+              admin image-->
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="images/admin.jpg" class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <!--<a class="news-title font-weight-bold pl-0" href="#!">Lorem ipsum dolor sit</a>
+              <p class="font-small text-uppercase white-text">
+                <i class="fas fa-clock-o pr-2" aria-hidden="true"></i>July 17, 2017 / <i
+                  class="far fa-comments px-1" aria-hidden="true"></i> 20
+              </p>-->
+            </div>
+			<div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4 Trenderfonts">
+             <h6 class="sub-title text-uppercase font-weight-bold white-text ">About us</h6>
+          <p class="font-small  white-text Trenderfont">University College of Engineering (BIT Campus)
+		  
+		  (formerly the School of Engineering and Technology)...</p><a class="Trenderfont"href="https://en.wikipedia.org/wiki/Anna_University_Chennai_%E2%80%93_Regional_Office,_Tiruchirappalli" style="color:#000; font-size:16px;"> Read more </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Department -->
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase Trenderfont" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" onclick="funCalled()">Academic</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 primary-color darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink3">
+          <div class="row">
+            <div class="col-md-12 col-xl-4 sub-menu mb-xl-0 mb-4">
+              <h6 class="sub-title font-weight-bold white-text Trenderfont">Department</h6>
+              <!--Featured image-->
+			   <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Department
+                  </a>
+                </li>
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/8-col/img%20(37).jpg"
+                  class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              
+              
+            </div>
+            <div class="col-md-6 col-xl-4 sub-menu mb-md-0 mb-4">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text Trenderfont"> Academic"</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Courses 
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Courses Offered
+                  </a>
+                </li>
+				 </ul>
+               <h6 class="sub-title font-weight-bold white-text Trenderfont">Consultancy<br>Sponsored Projects</h6>
+			   
+			    <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Consultancy
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Sponsored Projects 
+                  </a>
+                </li>
+				<li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>National Facility (R&amp;D) 
+                  </a>
+                </li>
+				 </ul>
+			   
+             
+            </div>
+            <div class="col-md-6 col-xl-4 sub-menu mb-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text Trenderfont">Other</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Centres
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Research
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>NIRF
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- Features  & services -->
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle text-uppercase Trenderfont" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" onclick="funCalled()">Features  & Services</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 primary-color darken-4 py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink4">
+          <div class="row">
+            <div class="col-md-6 col-xl-3 sub-menu mb-4 Trenderfont">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text">Features  & Services</h6>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Placement
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Grievance Redressal Cell
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item pl-0 Trenderfont href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Student Affairs
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-xl-3 sub-menu mb-4 mb-xl-0">
+              <h6 class="sub-title text-uppercase font-weight-bold white-text Trenderfont">Gallery</h6>
+			  <ul class="list-unstyled">
+                <li>
+                  <a class="menu-item pl-0 Trenderfont" href="#!">
+                    <i class="fas fa-caret-right pl-1 pr-3"></i>Gallery
+                  </a>
+                </li>
+           
+              <!--Gallery image-->
+              <a href="#!" class="view overlay z-depth-1 p-0 mb-2">
+                <img src="images/gallary.png"
+                  class="img-fluid" alt="First sample image">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+              <a class="news-title font-weight-bold pl-0 paragaphCustom" href="#!">get sight about us</a>
+             
+            </div>
+          
+          </div>
+        </div>
+      </li>
+
+
+    </ul>
+    <!-- Links -->
+
+    <!-- Search form 
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      </div>
+    </form>-->
+
+  </div>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!-- Navbar -->
+  </div>
+              <div class="wow fadeInDown" data-wow-delay="0.2s">
+                <h2 class="display-3 font-weight-bold mb-2">University</h2>
+                <hr class="hr-light">
+                <h3 class="subtext-header mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti
+                  consequuntur.</h3>
+              </div>
+              <a href="#events" data-offset="100" class="btn btn-info wow fadeInLeft" data-wow-delay="0.2s">Events</a>
+              <a href="#courses" data-offset="100" class="btn btn-warning wow fadeInRight"
+                data-wow-delay="0.2s">Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </header>
+  <!--Navigation & Intro-->
+
+  <!--Main content-->
+  <main>
+	
+
+  </main>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+
+</html>

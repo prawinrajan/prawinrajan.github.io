@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -22,41 +22,94 @@
      <link rel="stylesheet" href="css/aos.css" />
 </head>
 <style>
-.view {
-    background: url("https://mdbootstrap.com/img/Photos/Others/img (40).jpg")no-repeat center center;
-    background-size: cover;
-}
-
-.navbar {
-    background-color: transparent;
-}
-
-.top-nav-collapse {
-    background-color: #4285F4;
-}
-
-@media only screen and (max-width: 768px) {
-    .navbar {
-        background-color: #4285F4;
+   @media only screen and (min-width: 300px) and (max-width: 380px) {
+    .brand{
+        font-size: 11px;
     }
 }
+#myDIV {
+  width: 100%;
+ height:200px;
+ visibility:hidden;
+}
 
-html,
+body,main{
+margin:0% , padding:0 %
+}
+  html,
 body,
 header,
 .view {
   height: 100%;
 }
 
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+     background: #1C2331!important;
+  }
+}
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+.container {
+  margin-bottom: 0%;
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #FFFFFF !important;
+      }
+    }
+
 </style>
-<body>
-
-<!--Main Navigation-->
+<body onmousedown="WhichButton(event)" style="  padding: 0;  margin: 0;">
 <header>
-
- <nav class="navbar fixed-top navbar-expand-lg navbar-dark  scrolling-navbar">
-     <!-- Navbar -->
-
+ 
+<!--Navigation & Intro-->
+  <header>
+    <!-- Intro Section -->
+	
+    <div id="home" class="view jarallax" data-jarallax='{"speed": 0.2}'
+      style="background-image: url('images/cover.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; " >
+      
+	  <div class="mask rgba-black-strong">
+	  <!--mega menu strat-->
+ <div class="container-fluid my-4"  id="navbarCustomdesign">    
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-fixed-top  navbar-dark customBlack">
 
   <!-- Navbar brand -->
   
@@ -287,120 +340,34 @@ header,
   <!-- Collapsible content -->
 
 </nav>
-
-  <div class="view intro-2" style="">
-    <div class="full-bg-img">
-      <div class="mask rgba-purple-light flex-center">
-        <div class="container text-center white-text wow fadeInUp">
-          <!--<h2>This Navbar is fixed and transparent</h2>
-          <br>
-          <h5>It will always stay visible on the top, even when you scroll down</h5>
-          <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
-          <br>
-          <p>Full page intro with background image will be always displayed in full screen mode, regardless of
-            device </p>-->
-			<br><br><br><br><br><br><br><br><br><br><br><br>
-		<div class="row">
-		<div class="col-sm-6 " data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-		<center class="customIntro">
-		 University College of Engineering,<br>  Tiruchirappalli.
-		</center>
-		<!--Carousel Wrapper-->
-		<br><br>
-		<h3 class="paragaphCustom">college images</h3>
-    <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
-      <!--Indicators-->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-2" data-slide-to="1"></li>
-        <li data-target="#carousel-example-2" data-slide-to="2"></li>
-      </ol>
-      <!--/.Indicators-->
-      <!--Slides-->
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <div class="view">
-            <img class="d-block w-100" src="images/entrance.jpg" alt="First slide">
-            <div class="mask rgba-black-light"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive paragaphCustom">College Entrance</h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="images/acadaminc_bloack.jpg" alt="Second slide">
-            <div class="mask rgba-black-strong"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive paragaphCustom">Acadaminc Bloack</h3>
-            <p></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <!--Mask color-->
-          <div class="view">
-            <img class="d-block w-100" src="images/entrance_cover.jpg" alt="Third slide">
-            <div class="mask rgba-black-slight"></div>
-          </div>
-          <div class="carousel-caption">
-            <h3 class="h3-responsive paragaphCustom">Entrance Gate</h3>
-            <p></p>
-          </div>
-        </div>
-      </div>
-      <!--/.Slides-->
-      <!--Controls-->
-      <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-      <!--/.Controls-->
-    </div>
-    <!--/.Carousel Wrapper-->
-		</div>
-		<div class="col-sm-6 ">
-<div class=" shadow-lg bg-white rounded" style="margin-top:3%;" data-aos="fade-left"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine">
-<br>
-<h4 style="margin-top:3%"><b class="headCustom Trenderfont text-dark" >&emsp;New announcement </b></h4>
-
-<marquee class="marqueeCustom paragaphCustom text-dark" style="margin:10%" direction = "up"  behavior="scroll">
-&emsp;&emsp;
-<p>
-PARENTS-TEACHERS MEETING 2020  - Final YEAR B.Tech Pharma Students <br> Date :1.2.2020    Time 10:00Am - 11:00Am
-<br>Venue Room No.229 B-Block</p>
-<p>PARENTS-TEACHERS MEETING 2020  - III YEAR B.Tech Pharma Students <br> Date :8.2.2020    Time 10:00Am - 11:00Am
-<br>Venue Room No 229 B-Block </p>
-<p>EDUSAT Hall Booking Form </p>
-<p>Faculty Profile Format</p>
-<p>Anti Ragging Committee Members 2017</p>
-</marquee>
-
-</div>
-		</div>
-		</div>
-        </div>
-      </div>
-    </div>
+<!-- Navbar -->
   </div>
+        <div class="container h-100 d-flex justify-content-center align-items-center">
+		
+          <div class="row smooth-scroll">
+            <div class="col-md-12 white-text text-center">
+			   
+              <div class="wow fadeInDown" data-wow-delay="0.2s">
+                <h2 class="display-3 font-weight-bold mb-2">University</h2>
+                <hr class="hr-light">
+                <h3 class="subtext-header mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit deleniti
+                  consequuntur.</h3>
+              </div>
+              <a href="#events" data-offset="100" class="btn btn-info wow fadeInLeft" data-wow-delay="0.2s">Events</a>
+              <a href="#courses" data-offset="100" class="btn btn-warning wow fadeInRight"
+                data-wow-delay="0.2s">Courses</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-</header>
-<!--Main Navigation-->
 
-<!--Main Layout-->
-<main class="text-center py-5">
-
- <!--end of the mega menu strat -->
+  </header>
+  <!--Navigation & Intro-->
+  <!-- Full Page Intro -->
+  <main style=" margin-bottom: 0%; ">
+<!--end of the mega menu strat -->
 <!--strat of the body image-->
 <div class="container" style=" margin-bottom: 0%;" >
 
@@ -644,8 +611,7 @@ Online Faculty Development Programme on "Advanced Optimization Techniques and Ha
 </div>
 <!--end of the important links-->
 </main>
-<!--Main Layout-->
- <!-- Footer -->
+<!-- Footer -->
 <footer class="page-footer font-small primary-color lighten-3 pt-4" style="margin-top:-20%; padding">
 
   <!-- Footer Links -->
@@ -779,13 +745,29 @@ Online Faculty Development Programme on "Advanced Optimization Techniques and Ha
 
 </footer>
 <!-- Footer -->
-<script src="js/aos.js"></script>
+
+ <script src="js/aos.js"></script>
   <script>
     AOS.init({
 	 duration: 800
 	 });
   </script> 
   <script>
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".customBlack").css("background" , "transparent");
+	  }
+
+	  else{
+		  $(".customBlack").css("background" , "#ffffff");  	
+	  }
+  })
+})
+</script>
+
+<script>
 $(document).ready(function() {
     $('.multi-level-dropdown .dropdown-submenu > a').on("click", function(e) {
   var submenu = $(this);
@@ -800,17 +782,17 @@ $('.multi-level-dropdown .dropdown').on("hidden.bs.dropdown", function() {
 });
 });
 </script>
-
-
-  <!-- SCRIPTS -->
+<!-- end of the mega menu script-->
+<!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+   <script>
+  new WOW().init()
+  </script>
 </body>
 
 </html>
